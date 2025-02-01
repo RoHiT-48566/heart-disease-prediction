@@ -8,19 +8,19 @@ Logistic Regression is a statistical method for analyzing a dataset in which the
 
 ### Definition
 
-Logistic Regression is used to model the probability of a certain class or event existing such as pass/fail, win/lose, alive/dead, or healthy/sick. This can be extended to model several classes of events such as determining whether an image contains a cat, dog, lion, etc.
+Logistic Regression is used to model the probability of a certain class or event existing, such as pass/fail, win/lose, alive/dead, or healthy/sick. This can be extended to model several classes of events, such as determining whether an image contains a cat, dog, lion, etc.
 
 ### Equation
 
 The logistic regression model is represented by the following equation:
 
-![Equation](<https://latex.codecogs.com/png.latex?P(Y=1|X)=\frac{1}{1+e^{-({\beta_0}+{\beta_1}X_1+{\beta_2}X_2+...+{\beta_n}X_n)}}>)
+![Logistic Regression Equation](<https://latex.codecogs.com/png.latex?P(Y%3D1%7CX)%20%3D%20%5Cfrac%7B1%7D%7B1%20%2B%20e%5E%7B-%28%5Cbeta_0%20%2B%20%5Cbeta_1X_1%20%2B%20%5Cbeta_2X_2%20%2B%20...%20%2B%20%5Cbeta_nX_n%29%7D%7D>)
 
 Where:
 
 - `P(Y=1|X)` is the probability of the dependent variable being 1 given the independent variables `X`.
 - `` `β_0` `` is the intercept term.
-- `` `β_1, β_2, ..., β_n` `` are the coefficients of the independent variables `X_1, X_2, ..., X_n`.
+- `` `β_1, β_2, ..., β_n` `` are the coefficients of the independent variables `` `X_1, X_2, ..., X_n` ``.
 
 ### Use Cases
 
@@ -37,11 +37,11 @@ Logistic Regression is widely used in various fields, including:
 
 - **Odds**: The odds of an event occurring is the ratio of the probability of the event occurring to the probability of the event not occurring.
 
-  ![Equation](https://latex.codecogs.com/png.latex?\text{Odds}=\frac{P}{1-P})
+  ![Odds Formula](https://latex.codecogs.com/png.latex?%5Ctext%7BOdds%7D%20%3D%20%5Cfrac%7BP%7D%7B1-P%7D)
 
 - **Log-Odds**: The natural logarithm of the odds.
 
-  ![Equation](<https://latex.codecogs.com/png.latex?\text{Log-Odds}=\log(\frac{P}{1-P})>)
+  ![Log-Odds Formula](https://latex.codecogs.com/png.latex?%5Ctext%7BLog-Odds%7D%20%3D%20%5Clog%28%5Cfrac%7BP%7D%7B1-P%7D%29)
 
 #### 2. Maximum Likelihood Estimation (MLE)
 
@@ -56,29 +56,19 @@ The decision boundary is the threshold at which the predicted probability is con
 - **Confusion Matrix**: A table used to describe the performance of a classification model.
 - **Accuracy**: The ratio of correctly predicted instances to the total instances.
 
-  ![Equation](https://latex.codecogs.com/png.latex?\text{Accuracy}=\frac{TP+TN}{TP+TN+FP+FN})
+  ![Accuracy Formula](https://latex.codecogs.com/png.latex?%5Ctext%7BAccuracy%7D%20%3D%20%5Cfrac%7BTP%20%2B%20TN%7D%7BTP%20%2B%20TN%20%2B%20FP%20%2B%20FN%7D)
 
 - **Precision**: The ratio of correctly predicted positive observations to the total predicted positives.
 
-  ![Equation](https://latex.codecogs.com/png.latex?\text{Precision}=\frac{TP}{TP+FP})
+  ![Precision Formula](https://latex.codecogs.com/png.latex?%5Ctext%7BPrecision%7D%20%3D%20%5Cfrac%7BTP%7D%7BTP%20%2B%20FP%7D)
 
 - **Recall (Sensitivity)**: The ratio of correctly predicted positive observations to all observations in the actual class.
 
-  ![Equation](https://latex.codecogs.com/png.latex?\text{Recall}=\frac{TP}{TP+FN})
+  ![Recall Formula](https://latex.codecogs.com/png.latex?%5Ctext%7BRecall%7D%20%3D%20%5Cfrac%7BTP%7D%7BTP%20%2B%20FN%7D)
 
 - **F1 Score**: The weighted average of Precision and Recall.
 
-  ![Equation](https://latex.codecogs.com/png.latex?\text{F1%20Score}=2\times\frac{\text{Precision}\times\text{Recall}}{\text{Precision}+\text{Recall}})
-
-## Conclusion
-
-Logistic Regression is a powerful and widely used statistical method for binary classification problems. It is easy to implement and interpret, making it a popular choice for many applications.
-
-## References
-
-- [Logistic Regression - Wikipedia](https://en.wikipedia.org/wiki/Logistic_regression)
-- [Scikit-learn Documentation](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression)
-- [Introduction to Logistic Regression](https://towardsdatascience.com/introduction-to-logistic-regression-66248243c148)
+  ![F1 Score Formula](https://latex.codecogs.com/png.latex?F1%20%3D%202%20%5Ctimes%20%5Cfrac%7B%5Ctext%7BPrecision%7D%20%5Ctimes%20%5Ctext%7BRecall%7D%7D%7B%5Ctext%7BPrecision%7D%20%2B%20%5Ctext%7BRecall%7D%7D)
 
 ## Project Structure
 
@@ -89,10 +79,6 @@ heart-disease-prediction/
 |-- code.ipynb
 |-- README.md
 ```
-
-- **`heart_disease_data.csv`**: The dataset containing medical information of patients.
-- **`code.ipynb`**: The Jupyter notebook containing the code for data processing, model training, and evaluation.
-- **`README.md`**: This file, providing an overview of the project.
 
 ## Dataset
 
@@ -122,26 +108,14 @@ The dataset contains the following columns:
 5. **Model Evaluation**: Evaluate the model's performance using accuracy scores.
 6. **Predictive System**: Build a system to predict heart disease based on input features.
 
-## Usage
-
-1. Clone the repository.
-2. Open `code.ipynb` in Jupyter Notebook or any compatible environment.
-3. Run the cells sequentially to execute the code.
-
 ## Results
 
 The Logistic Regression model achieved the following accuracy:
 
-- **Training Data Accuracy**: 85.12%
-- **Test Data Accuracy**: 81.97%
-
-## Conclusion
-
-This project demonstrates the use of Logistic Regression for predicting heart disease. The model can be further improved by tuning hyperparameters, using different algorithms, or incorporating more data.
+- Training Data Accuracy: **85.12%**
+- Test Data Accuracy: **81.97%**
 
 ## References
 
 - [Scikit-learn Documentation](https://scikit-learn.org/stable/)
 - [Pandas Documentation](https://pandas.pydata.org/)
-
-Feel free to contribute to this project by opening issues or submitting pull requests.
