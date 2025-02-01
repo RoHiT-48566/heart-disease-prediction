@@ -1,8 +1,8 @@
 # Heart Disease Detection
 
-This project aims to predict the presence of heart disease in patients using machine learning techniques(Logistic Regression). The dataset used for this project is a collection of medical data related to heart disease.
+This project aims to predict the presence of heart disease in patients using machine learning techniques (Logistic Regression). The dataset used for this project is a collection of medical data related to heart disease.
 
-# Logistic Regression
+## Logistic Regression
 
 Logistic Regression is a statistical method for analyzing a dataset in which there are one or more independent variables that determine an outcome. The outcome is measured with a dichotomous variable (in which there are only two possible outcomes).
 
@@ -14,13 +14,13 @@ Logistic Regression is used to model the probability of a certain class or event
 
 The logistic regression model is represented by the following equation:
 
-\[ P(Y=1|X) = \frac{1}{1 + e^{-(\beta_0 + \beta_1X_1 + \beta_2X_2 + ... + \beta_nX_n)}} \]
+![Equation](<https://latex.codecogs.com/png.latex?P(Y=1|X)=\frac{1}{1+e^{-({\beta_0}+{\beta_1}X_1+{\beta_2}X_2+...+{\beta_n}X_n)}}>)
 
 Where:
 
-- \( P(Y=1|X) \) is the probability of the dependent variable being 1 given the independent variables \( X \).
-- \( \beta_0 \) is the intercept term.
-- \( \beta_1, \beta_2, ..., \beta_n \) are the coefficients of the independent variables \( X_1, X_2, ..., X_n \).
+- `P(Y=1|X)` is the probability of the dependent variable being 1 given the independent variables `X`.
+- `` `β_0` `` is the intercept term.
+- `` `β_1, β_2, ..., β_n` `` are the coefficients of the independent variables `X_1, X_2, ..., X_n`.
 
 ### Use Cases
 
@@ -36,14 +36,16 @@ Logistic Regression is widely used in various fields, including:
 #### 1. Odds and Log-Odds
 
 - **Odds**: The odds of an event occurring is the ratio of the probability of the event occurring to the probability of the event not occurring.
-  \[ \text{Odds} = \frac{P}{1-P} \]
+
+  ![Equation](https://latex.codecogs.com/png.latex?\text{Odds}=\frac{P}{1-P})
 
 - **Log-Odds**: The natural logarithm of the odds.
-  \[ \text{Log-Odds} = \log(\frac{P}{1-P}) \]
+
+  ![Equation](<https://latex.codecogs.com/png.latex?\text{Log-Odds}=\log(\frac{P}{1-P})>)
 
 #### 2. Maximum Likelihood Estimation (MLE)
 
-The coefficients \( \beta_0, \beta_1, ..., \beta_n \) are estimated using Maximum Likelihood Estimation (MLE), which finds the values that maximize the likelihood function.
+The coefficients `` `β_0, β_1, ..., β_n` `` are estimated using Maximum Likelihood Estimation (MLE), which finds the values that maximize the likelihood function.
 
 #### 3. Decision Boundary
 
@@ -53,19 +55,26 @@ The decision boundary is the threshold at which the predicted probability is con
 
 - **Confusion Matrix**: A table used to describe the performance of a classification model.
 - **Accuracy**: The ratio of correctly predicted instances to the total instances.
-  \[ \text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN} \]
-- **Precision**: The ratio of correctly predicted positive observations to the total predicted positives.
-  \[ \text{Precision} = \frac{TP}{TP + FP} \]
-- **Recall (Sensitivity)**: The ratio of correctly predicted positive observations to the all observations in actual class.
-  \[ \text{Recall} = \frac{TP}{TP + FN} \]
-- **F1 Score**: The weighted average of Precision and Recall.
-  \[ \text{F1 Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}} \]
 
-### Conclusion
+  ![Equation](https://latex.codecogs.com/png.latex?\text{Accuracy}=\frac{TP+TN}{TP+TN+FP+FN})
+
+- **Precision**: The ratio of correctly predicted positive observations to the total predicted positives.
+
+  ![Equation](https://latex.codecogs.com/png.latex?\text{Precision}=\frac{TP}{TP+FP})
+
+- **Recall (Sensitivity)**: The ratio of correctly predicted positive observations to all observations in the actual class.
+
+  ![Equation](https://latex.codecogs.com/png.latex?\text{Recall}=\frac{TP}{TP+FN})
+
+- **F1 Score**: The weighted average of Precision and Recall.
+
+  ![Equation](https://latex.codecogs.com/png.latex?\text{F1%20Score}=2\times\frac{\text{Precision}\times\text{Recall}}{\text{Precision}+\text{Recall}})
+
+## Conclusion
 
 Logistic Regression is a powerful and widely used statistical method for binary classification problems. It is easy to implement and interpret, making it a popular choice for many applications.
 
-### References
+## References
 
 - [Logistic Regression - Wikipedia](https://en.wikipedia.org/wiki/Logistic_regression)
 - [Scikit-learn Documentation](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression)
@@ -73,15 +82,17 @@ Logistic Regression is a powerful and widely used statistical method for binary 
 
 ## Project Structure
 
+```
 heart-disease-prediction/
 |
 |-- heart_disease_data.csv
 |-- code.ipynb
 |-- README.md
+```
 
-- [`heart_disease_data.csv`](heart_disease_data.csv): The dataset containing medical information of patients.
-- [`code.ipynb`](code.ipynb): The Jupyter notebook containing the code for data processing, model training, and evaluation.
-- `README.md`: This file, providing an overview of the project.
+- **`heart_disease_data.csv`**: The dataset containing medical information of patients.
+- **`code.ipynb`**: The Jupyter notebook containing the code for data processing, model training, and evaluation.
+- **`README.md`**: This file, providing an overview of the project.
 
 ## Dataset
 
@@ -114,15 +125,15 @@ The dataset contains the following columns:
 ## Usage
 
 1. Clone the repository.
-2. Open [`code.ipynb`](code.ipynb) in Jupyter Notebook or any compatible environment.
+2. Open `code.ipynb` in Jupyter Notebook or any compatible environment.
 3. Run the cells sequentially to execute the code.
 
 ## Results
 
 The Logistic Regression model achieved the following accuracy:
 
-- Training Data Accuracy: 85.12%
-- Test Data Accuracy: 81.97%
+- **Training Data Accuracy**: 85.12%
+- **Test Data Accuracy**: 81.97%
 
 ## Conclusion
 
